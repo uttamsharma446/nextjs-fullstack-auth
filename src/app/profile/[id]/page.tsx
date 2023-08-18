@@ -1,9 +1,12 @@
-"use-client";
+"use client";
 
-import React, { FC } from "react";
+import axios from "axios";
+import React, { FC, useEffect, useState } from "react";
 
 const UserProfile: FC<any> = ({ params }) => {
-  return <div>UserProfile{params.id}</div>;
+  const [data, setData] = useState("");
+
+  return <div>{params.id}</div>;
 };
 
 export default UserProfile;
